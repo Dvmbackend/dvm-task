@@ -1,6 +1,4 @@
 from django.db import models
-
-# Create your models here.
 class Bus(models.Model):
     bus_type_choices = [
         ('Standard', 'Standard class'),
@@ -27,9 +25,8 @@ class OTP(models.Model):
     def __str__(self):
         return f"{self.email} - {self.otp}"
 class UserEmail(models.Model):
-    email = models.EmailField(unique=True)  # Ensures that emails are unique
-    date_added = models.DateTimeField(auto_now_add=True)  # Automatically add the current date and time
-
+    email = models.EmailField(unique=True) 
+    date_added = models.DateTimeField(auto_now_add=True)  
     def __str__(self):
         return self.email
 from django.db import models
