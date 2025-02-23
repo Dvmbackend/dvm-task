@@ -21,7 +21,6 @@ urlpatterns=[
     path('register/', send_otp, name='register'),
     path('logout/', views.user_logout, name='logout'),
 
-    # Add any other URL paths like 'verify_otp', etc.
 ]
 
 
