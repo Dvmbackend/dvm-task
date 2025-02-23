@@ -8,7 +8,7 @@
 <body>
     
     <style>
-        /* Basic styling for centering the profile and booking form */
+       
         body {
             font-family: Arial, sans-serif;
             display: flex;
@@ -54,23 +54,21 @@
     <div class="profile-container">
         <h2>Booking</h2>
 
-        <!-- Booking Form -->
+
         <form method="POST" action="{% url 'success'  %}">
             {% csrf_token %}
-            <!-- Pickup Location -->
+       
             <label for="pickup-location">Pickup Location:</label>
             <input type="text" id="pickup-location" name="pickup-location" placeholder="Enter Pickup Location" required><br><br>
 
-            <!-- Destination Location -->
             <label for="destination-location">Destination Location:</label>
             <input type="text" id="destination-location" name="destination-location" placeholder="Enter Destination Location" required><br><br>
 
-            <!-- Date Picker -->
             <label for="booking-date">Select Date:</label>
             <input type="date" id="booking-date" name="booking-date" required><br><br>
 
             <h3>Choose Bus Type</h3>
-            <!-- Radio Buttons for Bus Type -->
+      
             <label>
                 <input type="radio" name="option" value="Standard" required>
                 Standard class
@@ -86,7 +84,7 @@
                 Sleeper class
             </label><br><br>
 
-            <!-- Submit Button -->
+        
             <button type="Link">Submit</button>
             <p><a href="http://127.0.0.1:8000/homepage/booking/"></a></p>
             
